@@ -9,13 +9,16 @@ import { ActivateGuard } from './activate.guard';
 import { UserService } from './user.service';
 import { HomeComponent } from './home/home.component';
 import {Approutes} from './Routing';
+import { MerchantComponent } from './merchant/merchant.component';
+import { DeactivateGuard } from './deactivate.guard';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    MerchantComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import {Approutes} from './Routing';
   ],
   providers: [
     ActivateGuard,
-    UserService
+    UserService,
+    DeactivateGuard
   ],
   bootstrap: [AppComponent]
 })
