@@ -12,6 +12,8 @@ import {Approutes} from './Routing';
 import { MerchantComponent } from './merchant/merchant.component';
 import { DeactivateGuard } from './deactivate.guard';
 import { CustomerComponent } from './customer/customer.component';
+import { AddcustomerComponent } from './addcustomer/addcustomer.component';
+import { ActivatechildguardGuard } from './activatechildguard.guard';
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { CustomerComponent } from './customer/customer.component';
     AdminComponent,
     HomeComponent,
     MerchantComponent,
-    CustomerComponent
+    CustomerComponent,
+    AddcustomerComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { CustomerComponent } from './customer/customer.component';
   providers: [
     ActivateGuard,
     UserService,
-    DeactivateGuard
+    DeactivateGuard,
+    ActivatechildguardGuard
   ],
   bootstrap: [AppComponent]
 })

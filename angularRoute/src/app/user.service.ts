@@ -7,7 +7,11 @@ export class UserService {
 
   isAdminRights(): boolean {
     return false;
-
   }
+
+  isChildRights(): boolean {
+    return true;
+  }
+
 
 }

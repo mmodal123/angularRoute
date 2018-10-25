@@ -1,3 +1,18 @@
 <p>
   customer works!
 </p>
+<div class="container">
+    <i class="wi wi-lightning"></i>
+  <nav ngClass= "parent-menu" class="nav justify-content-center|justify-content-end">
+    <ul>
+      <li>
+        <a [routerLink]="['addcustomer']" routerLinkActive="active">Add Customer</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h3>
+    <router-outlet> </router-outlet>
+  </h3>
+
+</div>
