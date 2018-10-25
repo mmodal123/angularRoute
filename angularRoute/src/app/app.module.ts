@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import {Approutes} from './Routing';
 import { MerchantComponent } from './merchant/merchant.component';
 import { DeactivateGuard } from './deactivate.guard';
+import { CustomerComponent } from './customer/customer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DeactivateGuard } from './deactivate.guard';
     AppComponent,
     AdminComponent,
     HomeComponent,
-    MerchantComponent
+    MerchantComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
